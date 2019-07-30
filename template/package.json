@@ -7,7 +7,8 @@
     "start": "rimraf dist pkg && webpack-dev-server --open -d",
     "test": "cargo test && wasm-pack test --headless",
     "build:prod": "rimraf pkg && wasm-pack build --target no-modules --out-name index && cp static/index.html pkg/",
-    "serve:prod": "cd pkg && python ../scripts/serve-prod.py"
+    "serve:prod": "cd pkg && python ../scripts/serve-prod.py",
+    "upload": "./scripts/upload.sh"
   },
   "devDependencies": {
     "@wasm-tool/wasm-pack-plugin": "^0.4.2",
