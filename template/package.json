@@ -5,7 +5,9 @@
   "scripts": {
     "build": "rimraf dist pkg && webpack",
     "start": "rimraf dist pkg && webpack-dev-server --open -d",
-    "test": "cargo test && wasm-pack test --headless"
+    "test": "cargo test && wasm-pack test --headless",
+    "build:prod": "rimraf pkg && wasm-pack build --target no-modules --out-name index && cp static/index.html pkg/",
+    "serve:prod": "cd pkg && python ../scripts/serve-prod.py"
   },
   "devDependencies": {
     "@wasm-tool/wasm-pack-plugin": "^0.4.2",
@@ -13,6 +15,7 @@
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.3",
     "webpack-dev-server": "^3.7.1",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "brotli-cli": "0.0.1"
   }
 }
