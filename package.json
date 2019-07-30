@@ -1,14 +1,20 @@
 {
-  "author": "Nick Fitzgerald <nfitzgerald@mozilla.com>",
-  "name": "create-rust-webpack",
-  "version": "0.2.0",
-  "repository": "https://github.com/rustwasm/rust-webpack-template",
-  "license": "(MIT OR Apache-2.0)",
-  "bin": {
-    "create-rust-webpack": ".bin/create-rust-webpack.js"
-  },
+  "author": "Robert Balicki <robert.balicki@gmail.com>",
+  "name": "create-smithy-app",
+  "version": "0.0.2",
   "dependencies": {
     "cpr": "^3.0.1",
     "rimraf": "^2.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rbalicki2/create-smithy-app"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbalicki2/create-smithy-app/issues"
+  },
+  "bin": {
+    "create-smithy-app": ".bin/create-rust-webpack.js"
   }
 }
