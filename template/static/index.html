@@ -2,9 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Rust + Webpack project!</title>
+    <title>My Smithy app</title>
   </head>
   <body>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
+    <script>
+      // when run locally, index.js (above) loads the wasm code
+      // for us. When deployed statically, we must do it ourselves.
+      if (typeof wasm_bindgen !== 'undefined') {
+        wasm_bindgen('./index_bg.wasm');
+      }
+    </script>
+    <div id="app"></div>
   </body>
 </html>
