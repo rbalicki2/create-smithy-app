@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+console.log('do we even run');
 const { spawnSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
