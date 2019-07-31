@@ -1,7 +1,7 @@
 {
   "author": "Robert Balicki <robert.balicki@gmail.com>",
   "name": "create-smithy-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "cpr": "^3.0.1",
     "rimraf": "^2.6.3"
