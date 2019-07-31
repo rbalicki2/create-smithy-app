@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-console.log('do we even run');
 const { spawnSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
@@ -31,7 +30,7 @@ if (process.argv.length >= 3) {
 let gitFolder = path.join(folderName, "git-clone");
 
 // This uses --no-tags and --depth 1 in order to make the cloning faster
-run("git", ["clone", "--no-tags", "--depth", "1", "https://github.com/rustwasm/rust-webpack-template.git", gitFolder]);
+run("git", ["clone", "--no-tags", "--depth", "1", "https://github.com/rbalicki2/create-smithy-app.git", gitFolder]);
 
 // Copies the template folder
 cpr(path.join(gitFolder, "template"), folderName, {}, function (err, files) {
