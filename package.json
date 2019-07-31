@@ -1,7 +1,7 @@
 {
   "author": "Robert Balicki <robert.balicki@gmail.com>",
   "name": "create-smithy-app",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "cpr": "^3.0.1",
     "rimraf": "^2.6.3"
@@ -15,6 +15,6 @@
     "url": "https://github.com/rbalicki2/create-smithy-app/issues"
   },
   "bin": {
-    "create-smithy-app": ".bin/create-rust-webpack.js"
+    "create-smithy-app": ".bin/create-smithy-app.js"
   }
 }
