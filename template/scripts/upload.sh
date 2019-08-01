@@ -1,5 +1,7 @@
 if [ -z $S3_BUCKET ]; then
-  echo "***** $S3_BUCKET is required"
+  echo "***** S3_BUCKET is required"
+  echo "Usage: S3_BUCKET=my_bucket npm run upload"
+  exit 1
 fi
 
 aws s3 sync ./pkg s3://$S3_BUCKET/ \

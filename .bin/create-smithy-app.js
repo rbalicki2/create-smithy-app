@@ -41,7 +41,7 @@ cpr(path.join(gitFolder, "template"), folderName, {}, function (err, files) {
     throw err;
 
   } else {
-    console.log(" 🦀 Rust + 🕸 WebAssembly + Webpack = ❤️ ");
+    console.log(" 🦀 Rust + 🛠 Smithy + 🕸 WebAssembly + Webpack = ❤️ ");
 
     run("npm", ["install"], { cwd: folderName, shell: true });
 
