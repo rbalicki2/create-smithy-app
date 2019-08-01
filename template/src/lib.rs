@@ -33,13 +33,13 @@ pub fn start() -> Result<(), JsValue> {
     let root_element = get_root_element()?;
 
     let app = smithy::smd!(
-      <h1>Hello, Smithy!</h1>
-      <p>
-        Thank you for trying Smithy!
-      </p>
-      <p>
-        Take a look at <code>src/lib.rs</code>. Happy hacking!
-      </p>
+        <h1>Hello, Smithy!</h1>
+        <p>
+            Thank you for trying Smithy!
+        </p>
+        <p>
+            Take a look at <code>src/lib.rs</code>. Happy hacking!
+        </p>
     );
     smithy::mount(Box::new(app), root_element);
 
