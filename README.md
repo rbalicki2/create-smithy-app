@@ -18,6 +18,8 @@ You can use `npm init` to clone this template:
 
 ```sh
 npm init smithy-app my_smithy_app
+cd my_smithy_app
+npm start
 ```
 
 ## 🔋 Batteries Included
