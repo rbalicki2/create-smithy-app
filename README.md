@@ -4,7 +4,7 @@
 >
 > Smithy is a Rust framework for writing WebAssembly apps.
 >
-> [Learn more about Smithy](https://www.smithy.rs) or [view the source code](https://github.com/rbalicki2/smithy).
+> [Learn more about Smithy](https://www.smithy.rs) or [view the repository](https://github.com/rbalicki2/smithy).
 
 ## About
 
@@ -17,7 +17,7 @@ It is a fork of the excellent [rust-webpack-template](https://github.com/rustwas
 You can use `npm init` to clone this template:
 
 ```sh
-npm init smithy-app my-app
+npm init smithy-app my_smithy_app
 ```
 
 ## 🔋 Batteries Included
