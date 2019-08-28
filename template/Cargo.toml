@@ -32,7 +32,7 @@ wee_alloc = { version = "0.4.2", optional = true }
 # The `wasm-bindgen` crate provides the bare minimum functionality needed
 # to interact with JavaScript.
 wasm-bindgen = { version = "0.2.48", features = ["nightly", "serde-serialize"] }
-smithy = { version="0.0.5", features = [
+smithy = { version = "0.0.6", features = [
   "mouse-events",
   "input-events",
 ] }
